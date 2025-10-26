@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+
+:root {
+  background: url('background2.jpg') no-repeat  fixed;
+  background-size: cover;
+}
+
+
+:root::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6); /* overlay color + opacity */
+  pointer-events: none;
+  z-index: -1;
+}

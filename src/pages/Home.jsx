@@ -1,10 +1,12 @@
-import { useState } from 'react'
 import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 function Home() {
 
   return (
     <>
-        <Navbar />
+        <div className=''>
+            <Hero />
+        </div>
     </>
   )
 }
